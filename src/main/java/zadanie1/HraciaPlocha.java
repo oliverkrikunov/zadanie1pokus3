@@ -1,6 +1,6 @@
 package zadanie1;
 
-public class hracia_plocha {
+public class HraciaPlocha {
     int[] plocha =new int[24];
     public void setPlocha(){
         for(int i=0;i<24;i++) {

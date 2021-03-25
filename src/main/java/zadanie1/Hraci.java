@@ -1,13 +1,82 @@
 package zadanie1;
 
 public class Hraci {
-    int na_tahu,id,stoj;
-    static int pocet_hracov;
-    String meno;
-    int pohyb;
-    int ucet=5000;
-    int pozicia=0;
-    int hraci,x;
+    private int na_tahu,id,stoj;
+    private static int pocet_hracov;
+    private String meno;
+    private int pohyb;
+    private int ucet=5000;
+    private int pozicia=0;
+
+    public int getNa_tahu() {
+        return na_tahu;
+    }
+
+    public void setNa_tahu(int na_tahu) {
+        this.na_tahu = na_tahu;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getStoj() {
+        return stoj;
+    }
+
+    public void setStoj(int stoj) {
+        this.stoj = stoj;
+    }
+
+    public static int getPocet_hracov() {
+        return pocet_hracov;
+    }
+
+    public static void setPocet_hracov(int pocet_hracov) {
+        Hraci.pocet_hracov = pocet_hracov;
+    }
+
+    public int getPohyb() {
+        return pohyb;
+    }
+
+    public void setPohyb(int pohyb) {
+        this.pohyb = pohyb;
+    }
+
+    public int getPozicia() {
+        return pozicia;
+    }
+
+    public void setPozicia(int pozicia) {
+        this.pozicia = pozicia;
+    }
+
+    public void setHraci(int hraci) {
+        this.hraci = hraci;
+    }
+
+    public int getUcet() {
+        return ucet;
+    }
+
+    public void setUcet(int ucet) {
+        this.ucet = ucet;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    private int hraci,x;
     public Hraci(int x,String name){
         this.id=id;
         this.meno =meno;
@@ -15,14 +84,7 @@ public class Hraci {
         this.pozicia=0;
         this.ucet=5000;
     }
-    public void setHraci() {
-        System.out.println("Pocet hracov :");
-        x=KeyboardInput.readInt();
-        int[] pole_hracov =new int[x];
-        for (int i=0;i<x;i++) {
-            System.out.print("Zadaj meno " + (i + 1) + " hraca ");
-            pole_hracov[i] =KeyboardInput.readChar();
-        } }
+
     public int getHraci() {
         return hraci;
     }
